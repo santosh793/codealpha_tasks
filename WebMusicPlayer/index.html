@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Music Player</h1>
+  <div class="controls">
+    <input type="file" id="fileUpload" accept="audio/*">
+    <button onclick="prevSong()">Prev</button>
+    <button onclick="playPause()" id="playBtn">Play</button>
+    <button onclick="nextSong()">Next</button>
+    <input type="range" min="0" max="1" step="0.1" value="1" id="volumeSlider">
+    <button onclick="toggleMode()">Toggle Mode</button>
+  </div>
+  <div class="search">
+    <input type="text" id="searchBox" placeholder="Search by title or artist..." oninput="searchSongs()">
+  </div>
+  <ul id="playlist"></ul>
+  <audio id="audioPlayer" controls></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

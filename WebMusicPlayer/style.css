@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  color: black;
+}
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+.controls button, .controls input {
+  margin: 5px;
+}
+#playlist li {
+  cursor: pointer;
+  margin: 5px;
+  list-style-type: none;
+}
